@@ -1,0 +1,9 @@
+url: "https://local-context.hp.gbif-uat.org/" # the base hostname & protocol for your staging site, e.g. https://hp-example.gbif-uat.org
+
+siteMeasurements:
+  enable: false
+
+graphqlEndpoint: "https://graphql.gbif-uat.org/graphql"
+
+useSharedLibrary: true
+updateTranslationMenuOnWidgetEvents: true #notice that this feature requires urls for widgets to be the same across languages (except for a language prefix)
