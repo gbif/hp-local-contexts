@@ -4,20 +4,9 @@ var siteTheme = gbifReactComponents.themeBuilder.extend({
   }
 });
 
-var publisherKeys = [
-  '760d5f24-4c04-40da-9646-1b2c935da502',
-  '2e7df380-8356-4533-bcb3-5459e23c794e',
-  '8e1a97a0-3ca8-11d9-8439-b8a03c50a862',
-];
-
-var institutionKeys = [
-  '68fcaba0-61fe-4e78-a460-4f37654d025d',
-  '59f46093-8fae-47f3-a9ef-e5fd1d38e4fe',
-  '44e7a331-0270-4c39-ad64-91c0d8416480',
-];
-
 var datasetKeys = [
-    '8937c4d6-a9c8-4207-a1f2-4022acb6c171',
+    '8937c4d6-a9c8-4207-a1f2-4022acb6c171', // has occurrence LC
+    '6caefe2d-d90b-4d66-8b10-122ccf952b7c' // has dataset machine tag
 ];
 
 var siteConfig = {
@@ -154,14 +143,6 @@ var siteConfig = {
       },
   },
   "institutionSearch": {},
-  "datasetSearch": {
-      excludedFilters: ['publishingCountry', 'networkKey', 'projectId', 'hostingOrg'],
-      highlightedFilters: ['q', 'type', 'publishingOrg', 'license'],
-      // defaultTableColumns: ['title', 'description', 'publisher', 'type', 'occurrenceCount', 'literatureCount'],
-      scope: {
-          publishingOrg: publisherKeys
-      },
-  },
   "publisherSearch": {},
   "literatureSearch": {
       "scope": {
