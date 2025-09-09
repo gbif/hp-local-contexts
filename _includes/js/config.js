@@ -16,27 +16,34 @@ var institutionKeys = [
   '44e7a331-0270-4c39-ad64-91c0d8416480',
 ];
 
+var datasetKeys = [
+    '8937c4d6-a9c8-4207-a1f2-4022acb6c171',
+];
+
 var siteConfig = {
   "version": 3,
+  experimentalFeatures: {
+    localContextEnabled: true
+  },
   "pages": [
       {
           "id": "occurrenceSearch"
       },
-      {
-          "id": "collectionSearch"
-      },
-      {
-          "id": "collectionKey"
-      },
-      {
-          "id": "datasetSearch"
-      },
+    //   {
+    //       "id": "collectionSearch"
+    //   },
+    //   {
+    //       "id": "collectionKey"
+    //   },
+    //   {
+    //       "id": "datasetSearch"
+    //   },
       {
           "id": "datasetKey"
       },
-      {
-          "id": "institutionKey"
-      },
+    //   {
+    //       "id": "institutionKey"
+    //   },
       {
           "id": "literatureSearch"
       }
@@ -44,8 +51,6 @@ var siteConfig = {
   "disableInlineTableFilterButtons": false,
   "availableCatalogues": [
       "OCCURRENCE",
-      "DATASET",
-      "COLLECTION",
       "LITERATURE"
   ],
   "dataHeader": {
@@ -97,12 +102,8 @@ var siteConfig = {
   "occurrenceSearch": {
       "scope": {
           "type": "in",
-          "key": "publishingOrg",
-          "values": [
-              "760d5f24-4c04-40da-9646-1b2c935da502",
-              "2e7df380-8356-4533-bcb3-5459e23c794e",
-              "8e1a97a0-3ca8-11d9-8439-b8a03c50a862"
-          ]
+          "key": "datasetKey",
+          "values": datasetKeys
       },
       "highlightedFilters": [
           "taxonKey",
@@ -122,28 +123,25 @@ var siteConfig = {
           "institutionCode",
           "collectionCode"
       ],
-      "defaultEnabledTableColumns": [
-          "features",
-          "institutionKey",
-          "collectionKey",
-          "catalogNumber",
-          "country",
-          "year",
-          "recordedBy",
-          "identifiedBy"
-      ],
+    //   "defaultEnabledTableColumns": [
+    //       "features",
+    //       "catalogNumber",
+    //       "country",
+    //       "year",
+    //       "recordedBy",
+    //       "identifiedBy"
+    //   ],
       "tabs": [
           "table",
           "gallery",
           "map",
-          "clusters",
           "dashboard",
           "download"
       ],
       "mapSettings": {
-          "lat": 52,
-          "lng": 12,
-          "zoom": 4.911544076366507
+          "lat": 0,
+          "lng": 0,
+          "zoom": 1
       }
   },
   "collectionSearch": {
@@ -168,12 +166,8 @@ var siteConfig = {
   "literatureSearch": {
       "scope": {
           "type": "in",
-          "key": "publishingOrganizationKey",
-          "values": [
-              "760d5f24-4c04-40da-9646-1b2c935da502",
-              "2e7df380-8356-4533-bcb3-5459e23c794e",
-              "8e1a97a0-3ca8-11d9-8439-b8a03c50a862"
-          ]
+          "key": "gbifDatasetKey",
+          "values": datasetKeys
       }
   }
 }

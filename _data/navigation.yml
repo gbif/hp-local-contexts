@@ -8,10 +8,6 @@
   menu: 
   - text: Specimens
     href: /occurrence/search
-  - text: Datasets
-    href: /dataset/search
-  - text: Collections
-    href: /collection/search
   - text: Literature
     href: /literature/search
 - text: Example pages
