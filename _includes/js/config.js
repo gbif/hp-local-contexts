@@ -1,7 +1,7 @@
 var siteTheme = gbifReactComponents.themeBuilder.extend({
-  baseTheme: 'light', extendWith: {
-      primary: themeStyle.colors.primary
-  }
+    baseTheme: 'light', extendWith: {
+        primary: themeStyle.colors.primary
+    }
 });
 
 var datasetKeys = [
@@ -10,145 +10,116 @@ var datasetKeys = [
 ];
 
 var siteConfig = {
-  "version": 3,
-  experimentalFeatures: {
-    localContextEnabled: true
-  },
-  "pages": [
-      {
-          "id": "occurrenceSearch"
-      },
-    //   {
-    //       "id": "collectionSearch"
-    //   },
-    //   {
-    //       "id": "collectionKey"
-    //   },
-    //   {
-    //       "id": "datasetSearch"
-    //   },
-      {
-          "id": "datasetKey"
-      },
-    //   {
-    //       "id": "institutionKey"
-    //   },
-      {
-          "id": "literatureSearch"
-      }
-  ],
-  "disableInlineTableFilterButtons": false,
-  "availableCatalogues": [
-      "OCCURRENCE",
-      "LITERATURE"
-  ],
-  "dataHeader": {
-      "enableApiPopup": false,
-      "enableInfoPopup": false
-  },
-  "theme": {
-      "primary": "#001972",
-      "borderRadius": 3,
-      "stickyOffset": "0px"
-  },
-  "maps": {
-      "mapStyles": {
-          "defaultProjection": "MERCATOR",
-          "defaultMapStyle": "BRIGHT",
-          "options": {
-              "MERCATOR": [
-                  "BRIGHT",
-                  "NATURAL"
-              ]
-          }
-      }
-  },
-  "languages": [
-      {
-          "code": "en",
-          "localeCode": "en",
-          "label": "English",
-          "default": true,
-          "textDirection": "ltr",
-          "iso3LetterCode": "eng",
-          "cmsLocale": "en-GB",
-          "gbifOrgLocalePrefix": "",
-          "mapTileLocale": "en"
-      },
-      {
-          "code": "da",
-          "localeCode": "da",
-          "label": "Dansk",
-          "default": false,
-          "textDirection": "ltr",
-          "iso3LetterCode": "dan",
-          "cmsLocale": "en-GB",
-          "gbifOrgLocalePrefix": "",
-          "mapTileLocale": "en"
-      }
-  ],
-  "messages": {},
-  "occurrenceSearch": {
-      "scope": {
-          "type": "in",
-          "key": "datasetKey",
-          "values": datasetKeys
-      },
-      "highlightedFilters": [
-          "taxonKey",
-          "verbatimScientificName",
-          "institutionKey",
-          "collectionKey",
-          "catalogNumber",
-          "recordedBy",
-          "identifiedBy"
-      ],
-      "excludedFilters": [
-          "occurrenceStatus",
-          "networkKey",
-          "hostingOrganizationKey",
-          "protocol",
-          "publishingCountry",
-          "institutionCode",
-          "collectionCode"
-      ],
-    //   "defaultEnabledTableColumns": [
-    //       "features",
-    //       "catalogNumber",
-    //       "country",
-    //       "year",
-    //       "recordedBy",
-    //       "identifiedBy"
-    //   ],
-      "tabs": [
-          "table",
-          "gallery",
-          "map",
-          "dashboard",
-          "download"
-      ],
-      "mapSettings": {
-          "lat": 0,
-          "lng": 0,
-          "zoom": 1
-      }
-  },
-  "collectionSearch": {
-      excludedFilters: ['country', 'active'],
-      // highlightedFilters: ['q', 'type', 'publishingOrg', 'license'],
-      // defaultTableColumns: ['title', 'description', 'publisher', 'type', 'occurrenceCount', 'literatureCount'],
-      scope: {
-          institutionKey: institutionKeys,
-          active: true
-      },
-  },
-  "institutionSearch": {},
-  "publisherSearch": {},
-  "literatureSearch": {
-      "scope": {
-          "type": "in",
-          "key": "gbifDatasetKey",
-          "values": datasetKeys
-      }
-  }
+    "version": 3,
+    experimentalFeatures: {
+        localContextEnabled: true
+    },
+    "pages": [
+        {
+            "id": "occurrenceSearch"
+        },
+        {
+            "id": "datasetKey"
+        },
+        {
+            "id": "literatureSearch"
+        }
+    ],
+    "disableInlineTableFilterButtons": false,
+    "availableCatalogues": [
+        "OCCURRENCE",
+        "LITERATURE"
+    ],
+    "dataHeader": {
+        "enableApiPopup": false,
+        "enableInfoPopup": false
+    },
+    "theme": {
+        "primary": "#001972",
+        "borderRadius": 3,
+        "stickyOffset": "0px"
+    },
+    "maps": {
+        "mapStyles": {
+            "defaultProjection": "MERCATOR",
+            "defaultMapStyle": "BRIGHT",
+            "options": {
+                "MERCATOR": [
+                    "BRIGHT",
+                    "NATURAL"
+                ]
+            }
+        }
+    },
+    "languages": [
+        {
+            "code": "en",
+            "localeCode": "en",
+            "label": "English",
+            "default": true,
+            "textDirection": "ltr",
+            "iso3LetterCode": "eng",
+            "cmsLocale": "en-GB",
+            "gbifOrgLocalePrefix": "",
+            "mapTileLocale": "en"
+        },
+        {
+            "code": "da",
+            "localeCode": "da",
+            "label": "Dansk",
+            "default": false,
+            "textDirection": "ltr",
+            "iso3LetterCode": "dan",
+            "cmsLocale": "en-GB",
+            "gbifOrgLocalePrefix": "",
+            "mapTileLocale": "en"
+        }
+    ],
+    "messages": {},
+    "occurrenceSearch": {
+        "scope": {
+            "type": "in",
+            "key": "datasetKey",
+            "values": datasetKeys
+        },
+        "highlightedFilters": [
+            "taxonKey",
+            "verbatimScientificName",
+            "institutionKey",
+            "collectionKey",
+            "catalogNumber",
+            "recordedBy",
+            "identifiedBy"
+        ],
+        "excludedFilters": [
+            "occurrenceStatus",
+            "networkKey",
+            "hostingOrganizationKey",
+            "protocol",
+            "publishingCountry",
+            "institutionCode",
+            "collectionCode"
+        ],
+        "tabs": [
+            "table",
+            "gallery",
+            "map",
+            "dashboard",
+            "download"
+        ],
+        "mapSettings": {
+            "lat": 0,
+            "lng": 0,
+            "zoom": 1
+        }
+    },
+    "institutionSearch": {},
+    "publisherSearch": {},
+    "literatureSearch": {
+        "scope": {
+            "type": "in",
+            "key": "gbifDatasetKey",
+            "values": datasetKeys
+        }
+    }
 }
