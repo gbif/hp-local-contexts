@@ -7,7 +7,7 @@ background:  "{{ site.data.images.catocala_ilia_cramer.src }}"
 imageLicense: "{{ site.data.images.catocala_ilia_cramer.caption }}"
 height: 90vh
 cta:
-  - text: Specimens
+  - text: Occurences
     href: /occurrence/search
     isPrimary: true
   - text: About
