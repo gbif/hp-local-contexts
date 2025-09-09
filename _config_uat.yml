@@ -1,4 +1,4 @@
-url: "https://local-contexts.hp.gbif-uat.org/" # the base hostname & protocol for your staging site, e.g. https://hp-example.gbif-uat.org
+url: "https://local-contexts.hp.gbif-test.org/" # the base hostname & protocol for your staging site, e.g. https://hp-example.gbif-uat.org
 
 siteMeasurements:
   enable: false
