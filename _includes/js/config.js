@@ -108,6 +108,7 @@ var siteConfig = {
             "table",
             "gallery",
             "map",
+            "datasets",
             "dashboard",
             "download"
         ],
