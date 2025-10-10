@@ -6,7 +6,11 @@ var siteTheme = gbifReactComponents.themeBuilder.extend({
 
 var datasetKeys = [
     '8937c4d6-a9c8-4207-a1f2-4022acb6c171', // has occurrence LC
-    '6caefe2d-d90b-4d66-8b10-122ccf952b7c' // has dataset machine tag
+    '6caefe2d-d90b-4d66-8b10-122ccf952b7c', // has dataset machine tag
+    'df582950-3b58-11dc-8c19-b8a03c50a862',
+    'ee27b1b0-3b55-11dc-8c18-b8a03c50a862',
+    '6e4b215e-9019-4934-8433-65d80a35c230',
+    '3c6e7390-3b56-11dc-8c19-b8a03c50a862'
 ];
 
 var siteConfig = {
