@@ -10,7 +10,8 @@ var datasetKeys = [
     'df582950-3b58-11dc-8c19-b8a03c50a862',
     'ee27b1b0-3b55-11dc-8c18-b8a03c50a862',
     '6e4b215e-9019-4934-8433-65d80a35c230',
-    '3c6e7390-3b56-11dc-8c19-b8a03c50a862'
+    '3c6e7390-3b56-11dc-8c19-b8a03c50a862',
+    '8b8c78fb-53d7-434c-b800-61f38b30d0c9'
 ];
 
 var siteConfig = {
